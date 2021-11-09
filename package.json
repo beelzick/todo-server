@@ -4,13 +4,12 @@
   "description": "apollo-server-todo-app",
   "main": "index.ts",
   "scripts": {
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
     "dev": "concurrently -k \"ts-node-dev src/index.ts --watch\" \"graphql-codegen --config codegen.yml\"",
-    "generate": "graphql-codegen --config codegen.yml",
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js"
+    "generate": "graphql-codegen --config codegen.yml"
   },
-  "heroku-run-build-script": true,
-  "author": "",
+  "author": "Beelzick",
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^3.5.0",

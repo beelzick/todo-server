@@ -2,7 +2,7 @@ import { ApolloServer } from 'apollo-server'
 import { typeDefs } from './typeDefs';
 import resolvers from './resolvers';
 import { MongoClient } from 'mongodb'
-import './lib/env'
+import './lib/loadEnv'
 
 declare const process: {
     env: {

@@ -1,5 +1,5 @@
 import { MongoClient } from 'mongodb'
-import './env'
+import './loadEnv'
 
 declare const process: {
     env: {
